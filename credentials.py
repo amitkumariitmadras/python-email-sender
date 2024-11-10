@@ -1,4 +1,13 @@
-smtp_server = 'REPLACE WITH SERVER ADDRESS'
-smtp_port = 'REPLACE WITH SERVER PORT'
-sender_email = 'REPLACE WITH YOUR EMAIL'
-sender_password = 'REPLACE WITH ENTER YOUR PASSWORD'
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+
+
+smtp_server = os.getenv('ADDRESS')
+smtp_port = os.getenv('PORT')
+sender_email = os.getenv('EMAIL')
+sender_password = os.getenv('PASSWORD')
+
+print(smtp_server, sender_email, sender_password, smtp_port)

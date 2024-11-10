@@ -7,6 +7,7 @@ def send_email(subject, message, sender_email, sender_password, recipient_email,
         server = smtplib.SMTP(smtp_server, smtp_port)
         server.ehlo()
         server.starttls()
+        print("Sending email: ", sender_email, "Sender Password: ", sender_password)
         server.login(sender_email, sender_password)
         msg = MIMEText(message)
         msg['Subject'] = subject
@@ -23,3 +24,6 @@ if __name__ == '__main__':
     subject = input("Please enter the subject of the email: ")
     message = input("Please enter the message: ")
     send_email(subject, message, sender_email, sender_password, recipient_email, smtp_server, smtp_port)
+# yatharthsingh1504@gmail.com
+# hey how are you doing
+# bro this is email from business account
