@@ -23,7 +23,7 @@ if __name__ == '__main__':
     recipient_email = input("Please enter the recipient's email address: ")
     recipient_name = input("Please enter the name of recipient: ")
 
-    subject = 'Happy Birthday!'
+    subject = 'Happy Birthday {recipient_name}!'
 
     message_template = """
     <html>
