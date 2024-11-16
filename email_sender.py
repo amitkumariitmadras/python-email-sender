@@ -28,7 +28,7 @@ if __name__ == '__main__':
     message_template = """
     <html>
         <body>
-            <h1 style="color: #2E8B57;">Happy Birthday, {name}!</h1>
+            <h1 style="color: #2E8B57;">Happy Birthday, {name} bro!</h1>
             <p>Dear <b>{name}</b>,</p>
             <p>Wishing you a day filled with love, laughter, and joy. Here's to another year of fantastic adventures!</p>
             <p>Enjoy your special day to the fullest!</p>
