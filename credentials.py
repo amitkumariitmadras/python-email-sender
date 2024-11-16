@@ -4,7 +4,6 @@ from dotenv import load_dotenv
 load_dotenv()
 # just checking for signed commits
 
-
 smtp_server = os.getenv('ADDRESS')
 smtp_port = os.getenv('PORT')
 sender_email = os.getenv('EMAIL')

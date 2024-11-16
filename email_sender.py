@@ -23,12 +23,12 @@ if __name__ == '__main__':
     recipient_email = input("Please enter the recipient's email address: ")
     recipient_name = input("Please enter the name of recipient: ")
 
-    subject = 'Happy Birthday!'
+    subject = 'Happy Birthday {recipient_name}!'
 
     message_template = """
     <html>
         <body>
-            <h1 style="color: #2E8B57;">Happy Birthday, {name}!</h1>
+            <h1 style="color: #2E8B57;">Happy Birthday, {name} bro!</h1>
             <p>Dear <b>{name}</b>,</p>
             <p>Wishing you a day filled with love, laughter, and joy. Here's to another year of fantastic adventures!</p>
             <p>Enjoy your special day to the fullest!</p>
