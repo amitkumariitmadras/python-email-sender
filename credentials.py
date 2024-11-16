@@ -2,7 +2,7 @@ import os
 from dotenv import load_dotenv
 
 load_dotenv()
-# just checking for signed commits
+# just checking for signed commits and co-authored
 
 smtp_server = os.getenv('ADDRESS')
 smtp_port = os.getenv('PORT')
